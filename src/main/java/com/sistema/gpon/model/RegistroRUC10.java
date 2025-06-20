@@ -1,6 +1,6 @@
 package com.sistema.gpon.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,21 +25,21 @@ public class RegistroRUC10 {
 	private Integer idRegistro;
 
 	@ManyToOne
-	@JoinColumn(name = "IdUsuario")
+	@JoinColumn(name = "IdUsuario", nullable = false)
 	private Usuario usuario;
 
 	@Column(name = "Asunto")
 	private String asunto;
 
 	@ManyToOne
-	@JoinColumn(name = "DniCliente")
+	@JoinColumn(name = "DniCliente", nullable = false)
 	private Cliente cliente;
 
-	@Column(name = "FechaRegistro")
-	private LocalDate fechaRegistro;
+	@Column(name = "FechaRegistro", nullable = false)
+	private LocalDateTime fechaRegistro;
 
 	@ManyToOne
-	@JoinColumn(name = "IdPlan")
+	@JoinColumn(name = "IdPlan", nullable = false)
 	private Plan plan;
 
 	@ManyToOne
@@ -47,28 +47,30 @@ public class RegistroRUC10 {
 	private Promocion promocion;
 
 	@ManyToOne
-	@JoinColumn(name = "IdDistrito")
+	@JoinColumn(name = "IdDistrito", nullable = false)
 	private Distrito distrito;
 
 	@ManyToOne
-	@JoinColumn(name = "IdSector")
+	@JoinColumn(name = "IdSector", nullable = false)
 	private Sector sector;
 
-	@Column(name = "IdSolicitud")
-	private Integer idSolicitud;
+	@Column(name = "IdSolicitud", nullable = false)
+	private String idSolicitud;
 
-	@Column(name = "IdInstalacion")
-	private Integer idInstalacion;
+	@Column(name = "IdInstalacion", nullable = false)
+	private String idInstalacion;
 
-	@Column(name = "Estado")
-	private String estado;
+	@ManyToOne
+	@JoinColumn(name = "IdEstado", nullable = false)
+	private EstadoRegistro estado;
 
-	@Column(name = "IdCarrito")
-	private Integer idCarrito;
+	@Column(name = "IdCarrito", nullable = false)
+	private String idCarrito;
 
-	@Column(name = "FechaInstalacion")
-	private LocalDate fechaInstalacion;
+	@Column(name = "FechaInstalacion", nullable = false)
+	private LocalDateTime fechaInstalacion;
 
 	@Column(name = "Observacion")
 	private String observacion;
 }
+

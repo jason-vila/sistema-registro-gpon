@@ -2,12 +2,14 @@ package com.sistema.gpon.service.impl;
 
 import java.util.List;
 
+import com.sistema.gpon.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.sistema.gpon.model.Plan;
 import com.sistema.gpon.repository.PlanRepository;
-import com.sistema.gpon.service.PlanService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PlanServiceImpl implements PlanService {
 	
 	@Autowired

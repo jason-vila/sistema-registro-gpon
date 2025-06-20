@@ -2,12 +2,12 @@ package com.sistema.gpon.service.impl;
 
 import java.util.List;
 
+import com.sistema.gpon.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sistema.gpon.model.Cliente;
 import com.sistema.gpon.repository.ClienteRepository;
-import com.sistema.gpon.service.ClienteService;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {

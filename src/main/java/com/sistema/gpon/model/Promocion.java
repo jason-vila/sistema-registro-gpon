@@ -20,6 +20,6 @@ public class Promocion {
 	@Column(name = "IdPromocion")
 	private Integer idPromocion;
 
-	@Column(name = "Descripcion")
+	@Column(name = "Descripcion", nullable = false)
 	private String descripcion;
 }

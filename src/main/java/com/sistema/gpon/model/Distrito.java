@@ -20,6 +20,6 @@ public class Distrito {
 	@Column(name = "IdDistrito")
 	private Integer idDistrito;
 
-	@Column(name = "NombreDistrito")
+	@Column(name = "NombreDistrito", nullable = false)
 	private String nombreDistrito;
 }

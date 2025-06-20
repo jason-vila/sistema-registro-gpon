@@ -23,18 +23,18 @@ public class Usuario {
 	private Integer idUsuario;
 
 	@ManyToOne
-	@JoinColumn(name = "IdRol")
+	@JoinColumn(name = "IdRol", nullable = false)
 	private Rol rol;
 
-	@Column(name = "Nombre")
+	@Column(name = "Nombre", nullable = false)
 	private String nombre;
 
-	@Column(name = "Apellido")
+	@Column(name = "Apellido", nullable = false)
 	private String apellido;
 
-	@Column(name = "Correo")
+	@Column(name = "Correo", nullable = false)
 	private String correo;
 
-	@Column(name = "Contrasena")
+	@Column(name = "Contrasena", nullable = false)
 	private String contrasena;
 }

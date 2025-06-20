@@ -2,12 +2,14 @@ package com.sistema.gpon.service.impl;
 
 import java.util.List;
 
+import com.sistema.gpon.service.RegistroRUC10Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.sistema.gpon.model.RegistroRUC10;
 import com.sistema.gpon.repository.RegistroRUC10Repository;
-import com.sistema.gpon.service.RegistroRUC10Service;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RegistroRUC10ServiceImpl implements RegistroRUC10Service {
 	
 	@Autowired

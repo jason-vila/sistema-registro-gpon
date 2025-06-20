@@ -2,12 +2,14 @@ package com.sistema.gpon.service.impl;
 
 import java.util.List;
 
+import com.sistema.gpon.service.RolService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.sistema.gpon.model.Rol;
 import com.sistema.gpon.repository.RolRepository;
-import com.sistema.gpon.service.RolService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RolServiceImpl implements RolService {
 	
 	@Autowired

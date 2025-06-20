@@ -20,6 +20,6 @@ public class Plan {
 	@Column(name = "IdPlan")
 	private Integer idPlan;
 
-	@Column(name = "Descripcion")
+	@Column(name = "Descripcion", nullable = false)
 	private String descripcion;
 }

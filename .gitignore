@@ -5,9 +5,11 @@
 !.mvn/wrapper/maven-wrapper.jar
 .mvn/timing.properties
 
+# ---------------------
 # Logs
-/logs/
-/*.log
+# ---------------------
+logs/
+*.log
 
 # ---------------------
 # IDEs
@@ -36,11 +38,11 @@
 out/
 
 ## NetBeans
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
 # ---------------------
 # OS-specific
@@ -51,8 +53,8 @@ Thumbs.db
 # ---------------------
 # Tomcat / Jetty (JSP compilados)
 # ---------------------
-/work/
-/.metadata/
+work/
+.metadata/
 *.war
 *.ear
 *.tmp
@@ -66,8 +68,10 @@ Thumbs.db
 # Variables de entorno
 # ---------------------
 .env
+.env.*
 
 # ---------------------
 # Documentos innecesarios
 # ---------------------
 HELP.md
+README-local.md

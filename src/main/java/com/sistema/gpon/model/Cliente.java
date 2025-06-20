@@ -17,15 +17,15 @@ public class Cliente {
 	@Column(name = "DniCliente")
 	private String dniCliente;
 
-	@Column(name = "Ruc")
+	@Column(name = "Ruc", nullable = false)
 	private String ruc;
 
-	@Column(name = "Nombre")
+	@Column(name = "Nombre", nullable = false)
 	private String nombre;
 
-	@Column(name = "Apellido")
+	@Column(name = "Apellido", nullable = false)
 	private String apellido;
 
-	@Column(name = "Telefono")
+	@Column(name = "Telefono", nullable = false)
 	private String telefono;
 }

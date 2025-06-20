@@ -2,12 +2,14 @@ package com.sistema.gpon.service.impl;
 
 import java.util.List;
 
+import com.sistema.gpon.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.sistema.gpon.model.Usuario;
 import com.sistema.gpon.repository.UsuarioRepository;
-import com.sistema.gpon.service.UsuarioService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UsuarioServiceImpl implements UsuarioService {
 
     @Autowired
